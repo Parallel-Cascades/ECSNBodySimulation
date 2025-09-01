@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6c8540e8dfbf39b45919beac89779106
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 296362
+  packageName: Procedural Celestial Body Materials
+  packageVersion: 2.0.0
+  assetPath: Assets/ParallelCascades/Common/Runtime/ParallelCascades.Common.Runtime.asmdef
+  uploadId: 771323

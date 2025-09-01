@@ -1,0 +1,16 @@
+{
+    "name": "ParallelCascades.Common.Editor",
+    "rootNamespace": "",
+    "references": ["GUID:6c8540e8dfbf39b45919beac89779106"],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
