@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ParallelCascades/DOTSNBodyGravity/Samples/Scenes/Satellite Spawning
+    path: Assets/ParallelCascades/ECSNBodySimulation/Samples/Scenes/Satellite Spawning
       Sample Scene.unity
     guid: 973067091b570ce4fab6a6d99c2a4b47
   m_configObjects:
