@@ -272,6 +272,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1981182831091555076, guid: 6f12164b364aa75408f76500d8a398fa, type: 3}
+      propertyPath: m_rotationSpeedPerAxis.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2416672487838647427, guid: 6f12164b364aa75408f76500d8a398fa, type: 3}
       propertyPath: m_PrimaryBody
       value: 
@@ -435,6 +439,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1029947546352048674, guid: 1ccd92e0e9a17e948bff852028ba840e, type: 3}
+      propertyPath: m_rotationSpeedPerAxis.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1434676710548167422, guid: 1ccd92e0e9a17e948bff852028ba840e, type: 3}
       propertyPath: m_Name
       value: Blue Planet

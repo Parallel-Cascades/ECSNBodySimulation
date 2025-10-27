@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 4929836308508086798}
   - component: {fileID: 8433427977415327837}
   - component: {fileID: 3136831811397818336}
+  - component: {fileID: 1029947546352048674}
   m_Layer: 0
   m_Name: Blue Gas Giant
   m_TagString: Untagged
@@ -345,6 +346,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c16549610bfe4458aa9389201d072bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1029947546352048674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434676710548167422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01eb1aa0c2c1414abec95c531610b805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_rotationSpeedPerAxis:
+    x: 0
+    y: 5
+    z: 0
 --- !u!1 &5774847767090162684
 GameObject:
   m_ObjectHideFlags: 0
