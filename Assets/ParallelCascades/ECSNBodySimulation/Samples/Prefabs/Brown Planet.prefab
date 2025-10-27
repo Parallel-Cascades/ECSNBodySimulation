@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 1193407278342677888}
   - component: {fileID: 5588793444470439510}
   - component: {fileID: 179041506092640167}
-  - component: {fileID: 3213927076113215982}
+  - component: {fileID: 1057934922908452127}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -407,7 +407,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 21dd3369b76585b4b9b7f750a36f134e, type: 2}
+  - {fileID: 2100000, guid: 70d86222d5a9df14e96fda30756f0bec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -429,7 +429,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3213927076113215982
+--- !u!114 &1057934922908452127
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -438,7 +438,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3081825120596689595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b6467bcd530cd4d809fae70ea0ca9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1dd9bf6f29504bc59a98f3dc2179240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0.101960786, g: 0.003921569, b: 0, a: 1}
+  m_colorA: {r: 0.4716981, g: 0.24261414, b: 0.0022249965, a: 0}
+  m_colorB: {r: 0.254717, g: 0.049153667, b: 0, a: 0}
+  m_fresnelColor: {r: 0.41509432, g: 0.10279711, b: 0.021537915, a: 0}
