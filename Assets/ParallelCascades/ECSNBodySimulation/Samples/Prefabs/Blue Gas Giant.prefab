@@ -444,6 +444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dd9bf6f29504bc59a98f3dc2179240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_saturation: 1
   m_colorA: {r: 0, g: 0.12013197, b: 1, a: 0}
   m_colorB: {r: 0, g: 0.9500499, b: 1, a: 0}
   m_fresnelColor: {r: 0, g: 0.9007921, b: 1, a: 0}
