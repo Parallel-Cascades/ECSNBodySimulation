@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ParallelCascades/ECSNBodySimulation/Samples/Scenes/Satellite Spawning
+    path: Assets/ParallelCascades/ECSNBodySimulation/Samples/Scenes/NBody Simulation
       Sample Scene.unity
-    guid: 973067091b570ce4fab6a6d99c2a4b47
+    guid: 6d8c5595d50146745b8c0c9dc638dcc5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

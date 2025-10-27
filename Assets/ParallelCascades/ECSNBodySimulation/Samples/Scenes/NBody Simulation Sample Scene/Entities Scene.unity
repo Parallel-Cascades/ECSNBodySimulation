@@ -623,6 +623,7 @@ GameObject:
   - component: {fileID: 1188490988}
   - component: {fileID: 1188490994}
   - component: {fileID: 1188490995}
+  - component: {fileID: 1188490996}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -669,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77129d46d735414583d045d60b2aec58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DoNotReceiveGravity: 1
+  m_DoNotReceiveGravity: 0
   m_DoNotContributeToGravity: 0
 --- !u!135 &1188490990
 SphereCollider:
@@ -760,6 +761,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c16549610bfe4458aa9389201d072bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1188490996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188490987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efcf806a11846fcafc671ee6c845dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1500655081
