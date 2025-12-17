@@ -6,6 +6,7 @@ using Unity.Mathematics;
 using Unity.Physics;
 using Unity.Physics.Extensions;
 using Unity.Physics.Systems;
+using Unity.Transforms;
 
 namespace ParallelCascades.ECSNBodySimulation.Runtime.Systems
 {
@@ -33,14 +34,18 @@ namespace ParallelCascades.ECSNBodySimulation.Runtime.Systems
         [BurstCompile]
         public void OnUpdate(ref SystemState state)
         {
+            VFXExplosionsSingleton vfxExplosionsSingleton = SystemAPI.GetSingletonRW <VFXExplosionsSingleton>().ValueRW;
+            
             var triggerJob = new NBodyTriggerCollideJob()
             {
                 NBodyEntityLookup = SystemAPI.GetComponentLookup<NBodyEntity>(true),
                 PhysicsMassLookup = SystemAPI.GetComponentLookup<PhysicsMass>(true),
+                LocalTransformLookup = SystemAPI.GetComponentLookup<LocalTransform>(true),
+                ExplosionsManager = vfxExplosionsSingleton.Manager,
                 PhysicsVelocityLookup = SystemAPI.GetComponentLookup<PhysicsVelocity>(),
-                ECB = new EntityCommandBuffer(Allocator.TempJob),
-                DeltaTime = SystemAPI.Time.DeltaTime
+                ECB = new EntityCommandBuffer(Allocator.TempJob)
             };
+            
             state.Dependency = triggerJob.Schedule(SystemAPI.GetSingleton<SimulationSingleton>(), state.Dependency);
             state.Dependency.Complete();
 
@@ -53,13 +58,13 @@ namespace ParallelCascades.ECSNBodySimulation.Runtime.Systems
         {
             [ReadOnly] public ComponentLookup<NBodyEntity> NBodyEntityLookup;
             [ReadOnly] public ComponentLookup<PhysicsMass> PhysicsMassLookup;
-            
+            [ReadOnly] public ComponentLookup<LocalTransform> LocalTransformLookup;
             public ComponentLookup<PhysicsVelocity> PhysicsVelocityLookup;
 
             public EntityCommandBuffer ECB;
-
-            public float DeltaTime;
-
+            
+            public VFXManager<VFXExplosionRequest> ExplosionsManager;
+            
             private bool ValidCollisionEntity(Entity e)
             {
                 return NBodyEntityLookup.HasComponent(e) && PhysicsMassLookup.HasComponent(e) && PhysicsVelocityLookup.HasComponent(e);
@@ -96,6 +101,13 @@ namespace ParallelCascades.ECSNBodySimulation.Runtime.Systems
                         
                         // Apply impact of entityA to entityB
                         ApplyImpactForce(entityA, entityB);
+
+                        ExplosionsManager.AddRequest(new VFXExplosionRequest
+                        {
+                            Position = LocalTransformLookup[entityA].Position,
+                            Scale = LocalTransformLookup[entityA].Scale,
+                            Color = new float3(1,1,0)
+                        });
                     }
                     else
                     {
@@ -103,6 +115,13 @@ namespace ParallelCascades.ECSNBodySimulation.Runtime.Systems
                         
                         // Apply impact of entityB to entityA
                         ApplyImpactForce(entityB, entityA);
+                        
+                        ExplosionsManager.AddRequest(new VFXExplosionRequest
+                        {
+                            Position = LocalTransformLookup[entityB].Position,
+                            Scale = LocalTransformLookup[entityB].Scale,
+                            Color = new float3(1,1,0)
+                        });
                     }
                 }
             }

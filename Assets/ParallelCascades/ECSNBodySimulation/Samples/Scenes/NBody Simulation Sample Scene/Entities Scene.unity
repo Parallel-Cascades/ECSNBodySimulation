@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 642926915}
   - component: {fileID: 642926918}
   - component: {fileID: 642926917}
-  - component: {fileID: 642926916}
+  - component: {fileID: 642926919}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -523,19 +523,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 244441634}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &642926916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642926914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b6467bcd530cd4d809fae70ea0ca9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: {r: 0, g: 0.1882353, b: 0.023529412, a: 1}
 --- !u!23 &642926917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -559,7 +546,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 21dd3369b76585b4b9b7f750a36f134e, type: 2}
+  - {fileID: 2100000, guid: 70d86222d5a9df14e96fda30756f0bec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -589,6 +576,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642926914}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &642926919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642926914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd9bf6f29504bc59a98f3dc2179240e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_saturation: 1
+  m_colorA: {r: 0.5235849, g: 1, b: 0.79675835, a: 0}
+  m_colorB: {r: 0, g: 0.31132078, b: 0.07009576, a: 0}
+  m_fresnelColor: {r: 0.40435627, g: 0.990566, b: 0.35978103, a: 0}
 --- !u!1 &867333429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6136796660304739664, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
@@ -620,6 +623,7 @@ GameObject:
   - component: {fileID: 1188490988}
   - component: {fileID: 1188490994}
   - component: {fileID: 1188490995}
+  - component: {fileID: 1188490996}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -666,7 +670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77129d46d735414583d045d60b2aec58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DoNotReceiveGravity: 1
+  m_DoNotReceiveGravity: 0
   m_DoNotContributeToGravity: 0
 --- !u!135 &1188490990
 SphereCollider:
@@ -757,6 +761,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c16549610bfe4458aa9389201d072bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1188490996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188490987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efcf806a11846fcafc671ee6c845dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1500655081
@@ -860,7 +876,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf68160a59132ce4dbf00e426078d9e0, type: 2}
+  - {fileID: 2100000, guid: 41fef2249e88d1146b5cad5924f0ed9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -898,6 +914,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_colorA.b
+      value: 0.039649345
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_colorA.g
+      value: 0.10971258
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_colorA.r
+      value: 0.254717
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_colorB.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_colorB.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_colorB.r
+      value: 0.98039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_saturation
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6136796660304739664, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
       propertyPath: m_Name
       value: Red Satellite (1)
@@ -1368,7 +1412,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 21dd3369b76585b4b9b7f750a36f134e, type: 2}
+  - {fileID: 2100000, guid: 70d86222d5a9df14e96fda30756f0bec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1407,10 +1451,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1945908299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b6467bcd530cd4d809fae70ea0ca9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1dd9bf6f29504bc59a98f3dc2179240e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: 0, g: 0.03137255, b: 1, a: 1}
+  m_saturation: 1
+  m_colorA: {r: 0, g: 0.12013197, b: 1, a: 0}
+  m_colorB: {r: 0, g: 0.9500499, b: 1, a: 0}
+  m_fresnelColor: {r: 0, g: 0.9007921, b: 1, a: 0}
 --- !u!1001 &6749198980525708394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1419,6 +1466,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_colorA.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_colorA.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_colorA.r
+      value: 0.38679248
+      objectReference: {fileID: 0}
+    - target: {fileID: 3680176564875590331, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
+      propertyPath: m_saturation
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6136796660304739664, guid: 3a556b130a4f1fa43be1650d2080e0b5, type: 3}
       propertyPath: m_Name
       value: Red Satellite

@@ -272,6 +272,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1981182831091555076, guid: 6f12164b364aa75408f76500d8a398fa, type: 3}
+      propertyPath: m_rotationSpeedPerAxis.y
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2416672487838647427, guid: 6f12164b364aa75408f76500d8a398fa, type: 3}
       propertyPath: m_PrimaryBody
       value: 
@@ -327,6 +331,10 @@ PrefabInstance:
     - target: {fileID: 4386675702975362540, guid: 6f12164b364aa75408f76500d8a398fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069231755763325359, guid: 6f12164b364aa75408f76500d8a398fa, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -389,6 +397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3818687812026886607, guid: 8d239cbce7242b44094bd462f77096f9, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 41fef2249e88d1146b5cad5924f0ed9d, type: 2}
     - target: {fileID: 4760186340327200703, guid: 8d239cbce7242b44094bd462f77096f9, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -427,6 +439,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1029947546352048674, guid: 1ccd92e0e9a17e948bff852028ba840e, type: 3}
+      propertyPath: m_rotationSpeedPerAxis.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1434676710548167422, guid: 1ccd92e0e9a17e948bff852028ba840e, type: 3}
       propertyPath: m_Name
       value: Blue Planet
