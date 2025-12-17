@@ -1,13 +1,9 @@
 ﻿# ECS N-Body Simulation
 
 This is a basic implementation of orbital mechanics simulation using Unity's Data-Oriented Technology Stack (DOTS).
-It leverages the Entity Component System (ECS) for efficient data management and the Job System for parallel processing, 
+It leverages the Entity Component System (ECS) for efficient data management and the Job System for parallel processing,
 allowing for high-performance simulations of gravitational interactions between multiple bodies.
 The gravity system applies velocity changes to physics entities, which get simulated through the Unity Entities Physics system.
-
-![NBody Gravity Simulation](nbody-sim.png)
-
-This asset is currently in early release/preview and subject to breaking changes. The documentation will also be updated over time.
 
 ## Setup
 
