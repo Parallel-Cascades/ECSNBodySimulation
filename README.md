@@ -1,5 +1,7 @@
 ﻿# ECS N-Body Simulation
 
+ ![N-Body Simulation](nbody-sim.png)
+
 This is a basic implementation of orbital mechanics simulation using Unity's Data-Oriented Technology Stack (DOTS).
 It leverages the Entity Component System (ECS) for efficient data management and the Job System for parallel processing,
 allowing for high-performance simulations of gravitational interactions between multiple bodies.
