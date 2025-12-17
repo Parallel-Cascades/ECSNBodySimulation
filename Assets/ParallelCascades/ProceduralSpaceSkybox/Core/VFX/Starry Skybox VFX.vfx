@@ -3420,7 +3420,7 @@ MonoBehaviour:
   - {fileID: 8926484042661615971}
   m_ExposedName: Star Texture
   m_Exposed: 1
-  m_Order: 6
+  m_Order: 4
   m_Category: Stars
   m_Min:
     m_Type:
